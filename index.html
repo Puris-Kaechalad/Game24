@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>เกม24</title>
+</head>
+<body>
+    <h1 id="header">สวัสดีผู้เล่นเกม24ทุกๆท่าน</h1>
+    
+    <hr class="hr1">
+    
+    <p id="descript">เว็ปไซต์นี้จัดทำขึ้นเพื่อการศึกษาเท่านั้น!!<br>หากพบว่าเว็ปมีข้อผิดพลาดหรือขัดต่อกฎหมายสามารถติดต่อผู้จัดทำได้โดยคลิกที่ปุ่ม"ผู้จัดทำ"</p>
+    
+    <hr class="hr2">
+
+    <section id="num_box">
+        <button id ="ran_btn" onClick="randomumber()" >สุ่มเลข</button> <!--ปุ่มรัน-->
+        <div id="numbers"> <!--โชว์ตัวเลข-->
+            <script src="/numbers.js"></script>
+        </div>
+    </section>
+
+    <section id="counter">
+        <p id="hour-label" class="label">ชั่วโมง</p>
+        <p id="min-label" class="label">นาที</p>
+        <p id="sec-label" class="label">วินาที</p>            
+        <input id="hour" type="number" max="99" min="0" value="0" class="time">
+        <p id="p1" class="semicolon">:</p>
+        <input id="minute" type="number" max="60" min="0" value="0" class="time">
+        <p id="p2" class="semicolon">:</p>
+        <input id="sec" type="number" max="60" min="0" value="0" class="time">
+        <button id="start" class="btn">เริ่ม</button>
+        <button id="reset" class="btn">หยุด</button>
+        <script src="/timer.js"></script>
+    </section>
+    
+    <section id="sol_box"> <!--กล่องวิธีทำ-->
+        <a id="sol_btn" href="https://matteoconverter.com/math/24-game-solution" target="_blank">วิธีทำ</a>
+    </section>
+
+    <a id="makby" href="/ผู้จัดทำ.pdf" target="_blank">ผู้จัดทำ</a>
+
+</body>
+</html>
